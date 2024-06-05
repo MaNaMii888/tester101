@@ -7,26 +7,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>HTML Database Example</h1>
+    <h1>Book of moon</h1>
 
-    <button id="openFormBtn">Open Form</button>
+    <div id="dropZone" class="drop-zone">
+        <button id="openFormBtn" class="open-form-btn">Open Form</button>
+        <p>Drag & Drop Files Here</p>
+    </div>
+
+    <input type="text" id="searchBox" placeholder="Search...">
 
     <div id="formPopup" class="form-popup">
         <form id="dataForm" class="form-container">
-            <h2>Enter Data</h2>
+            <h2 id="formTitle">Enter Data</h2>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="description">Description:</label>
             <textarea id="description" name="description" required></textarea>
-            <label for="image">Image:</label>
-            <input type="file" id="image" name="image" accept="image/*" required>
+            <div id="imageInputContainer">
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" >
+            </div>
+            <div id="changeImageContainer" style="display: none;">
+                <input type="checkbox" id="changeImage" name="changeImage">
+                <label for="changeImage">Change Image</label>
+                <div id="newImageInput" style="display: none;">
+                    <input type="file" id="newImage" name="newImage" accept="image/*">
+                </div>
+            </div>
             <button type="submit">Submit</button>
             <button type="button" id="closeFormBtn">Close</button>
         </form>
-    </div>
-
-    <div id="dropZone" class="drop-zone">
-        <p>Drag & Drop Files Here</p>
     </div>
 
     <div id="dataDisplay" class="data-display"></div>
@@ -34,4 +44,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-  
