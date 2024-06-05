@@ -1,0 +1,115 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+    z-index: 9;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin: 10px 0 5px;
+}
+
+.form-container input, .form-container textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.drop-zone {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    text-align: center;
+}
+.drop-zone {
+    position: relative;
+}
+
+.open-form-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Other CSS styles remain unchanged */
+
+
+.data-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.data-item {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 30%;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.actions button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 600px;
+}
